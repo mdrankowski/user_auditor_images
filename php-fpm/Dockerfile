@@ -1,13 +1,10 @@
 FROM php:7.2-rc-fpm
 
-# add directory for the auditor app
-RUN mkdir /var/www/auditor
-
-# add tr user
-RUN useradd -U tr
-
-# get all apt updates, install sendmail
-RUN apt-get update && apt-get install -y sendmail logrotate
+# add directory for the auditor app, tr user and install sendmail, logrotate
+RUN mkdir /var/www/auditor && \
+    useradd -U tr && \
+    apt-get update && apt-get install -y sendmail logrotate
+#
 
 # copy config files
 COPY ./conf/php-fpm.conf /usr/local/etc/php-fpm.d/www.conf
