@@ -19,7 +19,7 @@ version: php-fpm 7.2
 
 build command: docker build . -t mdrankowski/tourradar:php-fpm
 
-comments: sendmail and logrotate installed
+comments: sendmail and logrotate installed. Sendmail forwarding requires further tests.
 
 **Load-balancer:**
 
