@@ -16,6 +16,9 @@ COPY ./conf/sendmail.conf /usr/local/etc/php/conf.d/sendmail.ini
 # copy cron file
 COPY ./cron/user_auditor /etc/cron.d/
 
+# copy sendmail aliases
+COPY ./conf/aliases /etc/mail/
+
 # copy logrotate file
 COPY ./logrotate/user_auditor /etc/logrotate.d/
 
