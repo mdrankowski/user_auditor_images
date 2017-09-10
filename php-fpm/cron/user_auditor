@@ -1,0 +1,1 @@
+* */3 * * * tr php /var/www/auditor/email_logs.php mateusz@drankowski.co.uk
