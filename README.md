@@ -49,6 +49,5 @@ Further investigation required
 
 version: pureftp
 
-build command: docker build . -t mdrankowski/tourradar:ftp
-
-comments: more tests required
+comments: the image set up and committed from the running container
+No further changes on Dockerfile necessary.
