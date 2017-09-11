@@ -9,7 +9,7 @@ https://hub.docker.com/r/mdrankowski/tourradar/tags/
 
 version: apache 2.4.27
 
-build command: docker build . -t mdrankowski/tourradar:apache
+build command: `docker build . -t mdrankowski/tourradar:apache`
 
 comments: logstash beaver installed
 
@@ -17,7 +17,7 @@ comments: logstash beaver installed
 
 version: php-fpm 7.2
 
-build command: docker build . -t mdrankowski/tourradar:php-fpm
+build command: `docker build . -t mdrankowski/tourradar:php-fpm`
 
 comments: sendmail and logrotate installed. Sendmail forwarding requires further tests.
 
@@ -25,13 +25,13 @@ comments: sendmail and logrotate installed. Sendmail forwarding requires further
 
 version: haproxy 1.7
 
-build command: docker build . -t mdrankowski/tourradar:load-balancer
+build command: `docker build . -t mdrankowski/tourradar:load-balancer`
 
 **Mysql:**
 
 version: mysql 5.7.19
 
-build command: docker build . -t mdrankowski/tourradar:mysql
+build command: `docker build . -t mdrankowski/tourradar:mysql`
 
 comments: tourradar db created automatically with one table - logs
 
@@ -49,11 +49,7 @@ password: test
 
 version: logstash 5.5.2
 
-build command: docker build . -t mdrankowski/tourradar:logstash
-
-comments: logstash fail due to incorrect cgroups location, issue on github 
-awaiting resolution: https://github.com/elastic/logstash/issues/6824.
-Further investigation required
+build command: `docker build . -t mdrankowski/tourradar:logstash`
 
 **Ftp:**
 
