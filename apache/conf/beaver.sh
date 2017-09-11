@@ -11,7 +11,7 @@
 
 
 BEAVER_NAME='beaver'
-BEAVER_CMD='beaver -t stdout -l /var/log/beaver/output.log --debug -c /etc/beaver/beaver.conf'
+BEAVER_CMD='beaver -t redis -l /var/log/beaver/output.log --debug -c /etc/beaver/beaver.conf'
 RUNDIR='/var/run/beaver'
 BEAVER_PID=${RUNDIR}/logstash_beaver.pid
 BEAVER_USER='beaver'
