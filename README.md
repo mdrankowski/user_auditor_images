@@ -35,6 +35,16 @@ build command: docker build . -t mdrankowski/tourradar:mysql
 
 comments: tourradar db created automatically with one table - logs
 
+Details:
+
+host: localhost
+
+port: 3333
+
+username: tr
+
+password: test
+
 **Logstash:**
 
 version: logstash 5.5.2
@@ -51,3 +61,13 @@ version: pureftp
 
 comments: the image set up and committed from the running container
 No further changes on Dockerfile necessary.
+
+Details:
+
+host: localhost
+
+port 21
+
+username: tourradar
+
+password: test
