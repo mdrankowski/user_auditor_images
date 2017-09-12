@@ -4,7 +4,6 @@ FROM php:7.2-rc-fpm
 RUN mkdir /var/www/auditor && \
     useradd -U tr && \
     apt-get update && apt-get install -y sendmail logrotate
-#
 
 # copy config files
 COPY ./conf/php-fpm.conf /usr/local/etc/php-fpm.d/www.conf
