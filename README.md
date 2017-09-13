@@ -51,6 +51,10 @@ version: logstash 5.5.2
 
 build command: `docker build . -t mdrankowski/tourradar:logstash`
 
+Comment: during initial startup logstash can fail due to the excessive time it takes 
+for MySQL to boot. If this happens, run `docker-compose up -d` again.
+Script to check db on logstash init would be welcome here. 
+
 **Ftp:**
 
 version: pureftp
